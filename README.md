@@ -24,13 +24,13 @@ export default combineReducers({
 
 Include the toast controller in main view:
 ```javascript
-import {ToastController} from 'react-toastify-redux';
+import {ToastContainer} from 'react-toastify-redux';
 
 export default () => {
     return (
         <div>
             ...
-            <ToastController />
+            <ToastContainer />
         </div>
     );
 };
@@ -65,14 +65,14 @@ export default ({ header, message }) => (
 
 Include this component in ToastConroller
 ```javascript
-import {ToastController} from 'react-toastify-redux';
+import {ToastContainer} from 'react-toastify-redux';
 import CustomToastComponent from 'awesome-folder/custom-toast-component';
 
 export default () => {
     return (
         <div>
             ...
-            <ToastController toastComponent={CustomToastComponent} />
+            <ToastContainer toastComponent={CustomToastComponent} />
         </div>
     );
 };
